@@ -1,8 +1,10 @@
+package sistemaEscola;
+
 public class Aluno extends Pessoa{
 
-    int matricula, codigoTurma;
-    String[] disciplinas = new String[4];
-    double[] notas = new double[4];
+    protected int matricula, codigoTurma;
+    protected String[] disciplinas = new String[4];
+    protected double[] notas = new double[4];
     Aluno(String nome, String CPF, int idade, String naturalidade, String genero, int matricula, int codigoTurma, String[] disciplinas, double[] notas){
         super(nome, CPF, idade, naturalidade, genero);
 
@@ -29,7 +31,7 @@ public class Aluno extends Pessoa{
             if(notas[i] < 7) resultado = false;
         }
         if(resultado){
-            System.out.println("O aluno " + nome + " está aprovado.");
+            System.out.println("O aluno " + this.nome + " está aprovado.");
         }else{
             System.out.println("O aluno " + nome + " está reprovado nas seguintes disciplinas:");
             for (int i = 0; i < notas.length; i++) {

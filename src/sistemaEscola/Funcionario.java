@@ -1,8 +1,10 @@
+package sistemaEscola;
+
 public class Funcionario extends Pessoa {
 
-    String departamento;
+    protected String departamento;
 
-    int salario, horasDeTrabDiarias;
+    protected int salario, horasDeTrabDiarias;
     Funcionario(String nome, String CPF, int idade, String naturalidade, String genero, String departamento, int salario, int horasDeTrabDiarias){
         super(nome, CPF, idade, naturalidade, genero);
 

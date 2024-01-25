@@ -1,6 +1,7 @@
+package sistemaEscola;
 public class Pessoa {
-    String nome, CPF, naturalidade, genero;
-    int idade;
+    protected String nome, CPF, naturalidade, genero;
+    protected int idade;
 
     Pessoa(String nome, String CPF, int idade, String naturalidade, String genero){
         this.nome = nome;
